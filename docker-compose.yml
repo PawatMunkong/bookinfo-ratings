@@ -1,7 +1,7 @@
 services:
   ratings:
     build: .
-    image: ghcr.io/pawatmunkong/bookinfo-rattings:dev
+    image: ghcr.io/pawatmunkong/bookinfo-ratings:dev
     ports:
       - "8080:8080"
     environment:
