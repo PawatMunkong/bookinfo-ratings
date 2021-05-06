@@ -19,7 +19,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: ghcr.io/pawatmunkong/bookinfo-ratings:dev
+          tags: ghcr.io/pawatmunkong/bookinfo.ratings:dev
   deploy:
     needs: build
     runs-on: ubuntu-20.04
@@ -46,9 +46,3 @@ jobs:
                 "COMMIT_SHA": "${{ github.sha }}"
               }
             }
-  acceptance-test:
-    needs: deploy
-    runs-on: ubuntu-20.04
-    steps:
-      - name: Check display health status
-        run: curl http://bookinfo.dev.opsta.net/student51/ratings/health | grep "Ratings is working" && echo $? 
