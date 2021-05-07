@@ -42,3 +42,4 @@ jobs:
     steps:
       - name: acceptance test
         run: curl http://bookinfo.opsta.net/student74/ratings/health | grep "Ratings is working!!!" && echo $?
+        
