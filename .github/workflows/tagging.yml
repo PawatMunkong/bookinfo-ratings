@@ -36,3 +36,4 @@ jobs:
           src: ghcr.io/pawatmunkong/bookinfo-ratings:uat
           dst: |
             ghcr.io/pawatmunkong/bookinfo-ratings:${{needs.git-tag.outputs.tag-version}}
+            
