@@ -61,3 +61,6 @@ jobs:
         run: curl http://bookinfo.${{ env.ENV_NAME }}.opsta.net/student74/ratings/health | grep "Ratings is working" && echo $?
         
 
+        
+
+
